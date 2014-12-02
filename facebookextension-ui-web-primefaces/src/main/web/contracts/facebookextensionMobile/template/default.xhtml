@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+ 
+    <h:head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	<link href="#{request.contextPath}/contracts/facebookextension/css/default.css" rel="stylesheet" type="text/css"/>
+		<title>facebookextension management system</title>
+    </h:head>
+    
+    <ui:insert name="metadata"/>
+ 
+	<h:body>
+		<p:layout fullPage="true" stateful="true">  
+  
+		    <p:layoutUnit position="north">
+		   		Header Mobile
+	 		 </p:layoutUnit>  
+		  	
+		  	<p:layoutUnit position="east">  
+		        	 
+		    </p:layoutUnit>
+		  	
+		    <p:layoutUnit position="center">  
+		        <ui:insert name="body">
+		        	<h1>facebookextension management system Web UI - Mobile</h1>
+		        </ui:insert>	 
+		    </p:layoutUnit>
+		    
+		    <p:layoutUnit position="south">
+		    	Footer
+		    </p:layoutUnit>
+  
+		</p:layout>  
+ 		
+    </h:body>
+</html>

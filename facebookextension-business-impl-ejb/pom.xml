@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.cyk.system.facebookextension</groupId>
+		<artifactId>pom</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<name>Business Implementation based on EJB</name>
+	
+	<groupId>org.cyk.system.facebookextension.business</groupId>
+	<artifactId>facebookextension-business-impl-ejb</artifactId>
+	<packaging>ejb</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<version>${maven.ejb.plugin}</version>
+				<configuration>
+					<ejbVersion>${ejbVersion}</ejbVersion>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.cyk.system.facebookextension.business</groupId>
+			<artifactId>facebookextension-business-api</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.cyk.system.facebookextension.persistence</groupId>
+			<artifactId>facebookextension-persistence-impl-jpa</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.cyk.system.root.business</groupId>
+			<artifactId>root-business-impl-ejb</artifactId>
+			<version>0.0.1</version>
+			<type>ejb</type>
+		</dependency>
+	</dependencies>	
+
+</project>

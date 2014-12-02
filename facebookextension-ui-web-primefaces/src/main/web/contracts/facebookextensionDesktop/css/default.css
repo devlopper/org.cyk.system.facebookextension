@@ -1,0 +1,7 @@
+
+
+
+.ui-widget, .ui-widget .ui-widget {
+	font-size: 95% !important;
+	background: red  !important;
+}
