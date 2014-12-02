@@ -13,7 +13,7 @@
             <!--
             <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
             -->
-            <property name="eclipselink.logging.level.sql" value="ALL" />
+            <property name="eclipselink.logging.level.sql" value="OFF" />
             <property name="eclipselink.logging.parameters" value="true" />
         </properties>
     </persistence-unit>

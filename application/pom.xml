@@ -37,14 +37,7 @@
 					<generateApplicationXml>false</generateApplicationXml>
 					<version>${earVersion}</version>
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
-					<modules>
-						<webModule>
-							<groupId>org.cyk.system.facebookextension.ui.web.jsf</groupId>
-							<artifactId>facebookextension-ui-web-primefaces</artifactId>
-							<bundleFileName>facebookextension.war</bundleFileName>
-							<contextRoot>/facebookextension</contextRoot>
-						</webModule>
-					</modules>
+					
 				</configuration>
 			</plugin>
 		</plugins>

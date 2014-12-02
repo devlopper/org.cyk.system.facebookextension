@@ -43,9 +43,8 @@
 		
 		<dependency>
 			<groupId>org.cyk.system.facebookextension.business</groupId>
-			<artifactId>facebookextension-business-api</artifactId>
+			<artifactId>facebookextension-business-impl-ejb</artifactId> 
 			<version>0.0.1</version>
-			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
