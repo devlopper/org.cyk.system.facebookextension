@@ -8,6 +8,8 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,6 +19,7 @@ import lombok.Setter;
 
 import org.cyk.system.root.model.AbstractIdentifiable;
 import org.cyk.system.root.model.file.File;
+import org.cyk.system.root.model.file.Tag;
 
 @Entity
 @Getter @Setter
@@ -24,6 +27,11 @@ public class Post extends AbstractIdentifiable implements Serializable {
 	
 	private static final long serialVersionUID = 8827008215003243466L;
 
+	/**/
+	
+	
+	/**/
+	
 	@Column(unique=true)
 	private String reference;//reference the real post id on facebook database
 
@@ -36,6 +44,7 @@ public class Post extends AbstractIdentifiable implements Serializable {
 	@OneToOne(cascade=CascadeType.ALL)
 	private File media;
 	
+	@OneToMany(fetch=FetchType.LAZY)
 	private Set<Tag> tags = new HashSet<Tag>();
 	
 	public Post() {}

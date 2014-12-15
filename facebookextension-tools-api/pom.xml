@@ -9,16 +9,31 @@
 		<version>0.0.1</version>
 	</parent>
 
-	<name>Facebook Tools Application</name>
+	<name>Facebook Tools API</name>
 
-	<artifactId>facebookextension-tools</artifactId>
+	<artifactId>facebookextension-tools-api</artifactId>
 	<packaging>jar</packaging>
 	
 	<dependencies>
 		<dependency>
 			<groupId>org.cyk.system.facebookextension</groupId>
-			<artifactId>facebookextension-tools-api</artifactId>
+			<artifactId>facebookextension-model</artifactId>
 			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.restfb</groupId>
+			<artifactId>restfb</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
 		</dependency>
 	</dependencies>
 
