@@ -33,10 +33,10 @@ public abstract class AbstractFacebookClient<CLIENT,ATTACHMENT,FQL_POST extends 
 	
 
 	public AbstractFacebookClient(Class<FQL_POST> fqlPostClass) {
-		this.fqlPostClass = fqlPostClass;
+		this.fqlPostClass = fqlPostClass;//comments for push
 	}
 	
-	protected String fqlAccessToken(){
+	protected String fqlAccessToken(){  
 		return "CAACEdEose0cBAGTFtkpdnIwSjGuuzihIy52oNC6cM3PZBZAMLPigOjBc9tN60A1mwn858484v7tpTdTXmK9pyNWxEKoLUtxnpidfL4JTdoqrAJpDk6kvQxvZCYRxoaQmqFrFZCZCNEMjOwggtj9DIEAotMz0vFNGIqqyzjyTTong69baXvQrZAAwv7qcD75NU7uAVUflW0Byy1QgbydoNI9dhrJCrXNi0ZD";
 	}
 	
